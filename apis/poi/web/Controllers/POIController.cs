@@ -25,6 +25,7 @@ namespace poi.Controllers
             return _context.POIs.ToList();
         }
 
+
         [HttpGet("{ID}", Name = "GetPOIById")]
         [Produces("application/json", Type = typeof(POI))]
         public IActionResult GetById(string ID)
